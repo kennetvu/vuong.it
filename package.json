@@ -1,0 +1,23 @@
+{
+  "name": "vuong.it",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.1",
+    "bulma-extensions": "^6.2.7",
+    "parcel-bundler": "^1.12.4"
+  },
+  "devDependencies": {
+    "@creativebulma/bulma-tooltip": "^1.2.0",
+    "bulma": "^0.9.0",
+    "sass": "^1.26.8"
+  }
+}

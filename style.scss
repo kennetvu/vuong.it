@@ -1,0 +1,14 @@
+@import '@fortawesome/fontawesome-free/css/all.css';
+@import '~bulma/bulma';
+@import '~@creativebulma/bulma-tooltip';
+
+.contact-tile {
+  color: $grey-dark;
+  &:hover {
+    color: $blue;
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
