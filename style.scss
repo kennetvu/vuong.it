@@ -1,6 +1,12 @@
 @import '@fortawesome/fontawesome-free/css/all.css';
-@import '~bulma/bulma';
+@import '~bulma';
+@import 'bulma-timeline/dist/css/bulma-timeline.min.css';
 @import '~@creativebulma/bulma-tooltip';
+html,
+body {
+  height: 100%;
+  background-color: #fafafa;
+}
 
 .contact-tile {
   color: $grey-dark;
@@ -12,3 +18,7 @@
 .uppercase {
   text-transform: uppercase;
 }
+
+// .custom-color {
+//   background-color: red !important;
+// }

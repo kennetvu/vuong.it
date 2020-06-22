@@ -13,6 +13,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.1",
     "bulma-extensions": "^6.2.7",
+    "bulma-timeline": "^3.0.4",
     "parcel-bundler": "^1.12.4"
   },
   "devDependencies": {
