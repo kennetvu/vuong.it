@@ -10,7 +10,7 @@ const SocialIcon = (props: SocialIconProps) => {
   const link = props.link.includes('@') ? `mailto:${props.link}` : props.link;
   return (
     <div className="flex justify-center content-center grow text-center">
-      <a href={link} target="_blank">
+      <a href={link} target="_blank" rel="noreferrer">
         <p className="group uppercase ">
           <span className="group-hover:text-blue-400">{props.heading}</span>
           {props.icon}
@@ -25,7 +25,7 @@ const Home: NextPage = () => {
     <div className="bg-slate-800 text-white min-h-screen">
       <main className="container mx-auto">
         <section className="text-center py-20">
-          <h1 className="text-5xl font-bold">Hi, I'm Kennet</h1>
+          <h1 className="text-5xl font-bold">{`Hi, I'm Kennet`}</h1>
           <h2 className="text-lg">Software engineer with passion for tech</h2>
         </section>
         <section className="flex justify-between content-center">
