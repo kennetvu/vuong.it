@@ -1,10 +1,9 @@
 import { Envelope, Github, LinkedIn, Twitter } from 'components/Icons';
 import Joke from 'components/Joke';
 import SocialIcon from 'components/SoicialIcon';
-import type { NextPage, NextPageContext } from 'next';
-import { getJoke } from 'utils/jokes';
+import type { NextPage } from 'next';
 
-const Home: NextPage<{ joke: string }> = (props) => {
+const Home: NextPage = () => {
   return (
     <div className="bg-slate-800 text-white min-h-screen">
       <main className="container mx-auto">
@@ -59,19 +58,10 @@ const Home: NextPage<{ joke: string }> = (props) => {
           <br />
           &copy; vuong.it
         </p>
-        <Joke initialJoke={props.joke} />
+        <Joke />
       </footer>
     </div>
   );
 };
-
-export async function getServerSideProps(context: NextPageContext) {
-  const joke = getJoke();
-  return {
-    props: {
-      joke,
-    }, // will be passed to the page component as props
-  };
-}
 
 export default Home;
